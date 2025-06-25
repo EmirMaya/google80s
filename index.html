@@ -16,6 +16,31 @@
 
     <!-- Estilos personalizados -->
     <style>
+      .animated-line {
+        width: 100vw;
+        height: 5px;
+        margin: 2px 0;
+        transform: scaleX(0);
+        transform-origin: center;
+        animation: expandX 1s ease-out forwards;
+      }
+      @keyframes expandX {
+        to {
+          transform: scaleX(1);
+        }
+      }
+      .fade-zoom-in {
+        opacity: 0;
+        transform: scale(0.8);
+        animation: fadeZoomIn 2s ease-out forwards;
+        animation-delay: 1s;
+      }
+      @keyframes fadeZoomIn {
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
       .font-monoton {
         font-family: "Monoton", cursive;
       }
@@ -89,24 +114,25 @@
         class="absolute top-[9px] sm:top-[17px] lg:top-[24px] flex flex-col items-center justify-center"
       >
         <div
-          class="w-screen h-[3px] sm:h-[5px] lg:h-[7px] my-0.5 bg-gradient-to-r from-red-500 via-transparent to-red-500 drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+          class="animated-line w-screen h-[3px] sm:h-[5px] lg:h-[7px] my-0.5 bg-gradient-to-r from-red-500 via-transparent to-red-500 drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
         ></div>
         <div
-          class="w-screen h-[3px] sm:h-[5px] lg:h-[7px] my-0.5 bg-gradient-to-r from-orange-400 via-transparent to-orange-400 drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+          class="animated-line w-screen h-[3px] sm:h-[5px] lg:h-[7px] my-0.5 bg-gradient-to-r from-orange-400 via-transparent to-orange-400 drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
         ></div>
         <div
-          class="w-screen h-[3px] sm:h-[5px] lg:h-[7px] my-0.5 bg-gradient-to-r from-amber-400 via-transparent to-amber-400 drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+          class="animated-line w-screen h-[3px] sm:h-[5px] lg:h-[7px] my-0.5 bg-gradient-to-r from-amber-400 via-transparent to-amber-400 drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
         ></div>
         <div
-          class="w-screen h-[3px] sm:h-[5px] lg:h-[7px] my-0.5 bg-gradient-to-r from-yellow-300 via-transparent to-yellow-300 drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+          class="animated-line w-screen h-[3px] sm:h-[5px] lg:h-[7px] my-0.5 bg-gradient-to-r from-yellow-300 via-transparent to-yellow-300 drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
         ></div>
       </div>
-
-      <h2
-        class="font-monoton text-5xl sm:text-7xl lg:text-8xl text-white relative z-10 txt-sh mt-10"
-      >
-        GOOGLE
-      </h2>
+      <div class="z-10 px-5 lg:px-0 rounded-2xl">
+        <h2
+          class="font-monoton text-5xl sm:text-7xl lg:text-8xl text-white relative z-10 txt-sh  fade-zoom-in"
+        >
+          GOOGLE
+        </h2>
+      </div>
 
       <!-- Barra de búsqueda -->
       <div
