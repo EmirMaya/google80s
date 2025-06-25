@@ -62,9 +62,11 @@
       .link {
         @apply hover:underline cursor-pointer hover:text-white;
       }
+
       .btn {
-        @apply bg-gray-100 p-2 mb-4 sm:px-3 sm:py-2 rounded-sm text-sm text-gray-800 outline-none transition-all duration-300 ease-in-out hover:shadow-sm shadow-white hover:bg-white hover:text-gray-950;
+
       }
+    
     </style>
   </head>
 
@@ -170,13 +172,13 @@
       >
         <button
           onclick="event.preventDefault(); const q = document.getElementById('search-input').value; if(q) window.location.href='https://www.google.com/search?q=' + encodeURIComponent(q);"
-          class="btn"
+          class="bg-gray-100 p-2 sm:px-3 sm:py-2 rounded-sm text-sm text-gray-800 outline-none transition-all duration-300 ease-in-out hover:shadow-sm hover:shadow-white hover:bg-white hover:text-gray-950"
         >
           Google Search
         </button>
         <button
           onclick="event.preventDefault(); const q = document.getElementById('search-input').value; if(q) window.location.href='https://www.google.com/search?q=' + encodeURIComponent(q) + '&btnI=I';"
-          class="btn"
+          class="bg-gray-100 p-2 mb-4 sm:px-3 sm:py-2 rounded-sm text-sm text-gray-800 outline-none transition-all duration-300 ease-in-out hover:shadow-sm hover:shadow-white hover:bg-white hover:text-gray-950"
         >
           I'm Feeling Lucky
         </button>
