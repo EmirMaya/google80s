@@ -6,8 +6,9 @@
     <title>Google Retro</title>
 
     <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link href="./output.css" rel="stylesheet" /> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="styles/output.css" rel="stylesheet" />
+
     <!-- Fuentes Google -->
     <link
       href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
@@ -170,7 +171,7 @@
       >
         <button
           onclick="event.preventDefault(); const q = document.getElementById('search-input').value; if(q) window.location.href='https://www.google.com/search?q=' + encodeURIComponent(q);"
-          class="bg-gray-100 p-2 mb-4 sm:mb-0 sm:px-3 sm:py-2 rounded-sm text-sm text-gray-800 outline-none transition-all duration-300 ease-in-out hover:shadow-sm hover:shadow-white hover:bg-white hover:text-gray-950"
+          class="bg-gray-100 p-2 mb-4  sm:px-3 sm:py-2 rounded-sm text-sm text-gray-800 outline-none transition-all duration-300 ease-in-out hover:shadow-sm hover:shadow-white hover:bg-white hover:text-gray-950"
         >
           Google Search
         </button>
